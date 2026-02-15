@@ -37,7 +37,7 @@ export default function Features() {
     ];
 
     return (
-        <section className="relative py-32 bg-white overflow-hidden">
+        <section className="relative pb-32 bg-white overflow-hidden">
             {/* Background Pattern */}
             <div className="absolute inset-0 z-0 flex items-center justify-center opacity-[0.03] scale-125">
                 <div className="relative w-full h-full max-w-4xl max-h-4xl">

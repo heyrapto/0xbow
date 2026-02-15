@@ -24,7 +24,7 @@ export default function Trusted() {
         <section className="py-24 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Main Header Box */}
-                <div className="border border-black/[0.1] pt-20 pb-24 px-10 relative mb-4">
+                <div className="border border-black pt-20 pb-24 px-10 relative mb-4">
                     <div className="text-center mb-20">
                         <h2 className="text-[52px] font-medium leading-[1.1] tracking-tight text-black max-w-4xl mx-auto">
                             Adopted by renowned, <span className="text-black/30">trusted</span>, and leading enterprises
@@ -34,7 +34,7 @@ export default function Trusted() {
                     {/* Partners Slider/Row */}
                     <div className="flex justify-center flex-wrap gap-12 lg:gap-20 items-center opacity-80 overflow-hidden">
                         {partners.map((partner) => (
-                            <div key={partner.id} className="relative w-20 h-20 rounded-full overflow-hidden grayscale hover:grayscale-0 transition-all cursor-pointer">
+                            <div key={partner.id} className="relative w-20 h-20 rounded-full overflow-hidden transition-all cursor-pointer">
                                 <Image
                                     src={partner.src}
                                     alt="Partner Logo"
@@ -49,7 +49,7 @@ export default function Trusted() {
                 {/* Advisors and Incubated By */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
                     {/* Advisors Left Info */}
-                    <div className="lg:col-span-3 border border-black/[0.1] p-8">
+                    <div className="lg:col-span-3 border border-black p-8">
                         <h3 className="text-[12px] font-bold tracking-widest uppercase text-black mb-8">ADVISORS</h3>
                         <p className="text-[13px] text-black/50 leading-relaxed max-w-[200px]">
                             A body that provides non-binding strategic advice to the management of a corporation, organization, or foundation
@@ -59,7 +59,7 @@ export default function Trusted() {
                     {/* Advisors List Center */}
                     <div className="lg:col-span-6 flex flex-col gap-4">
                         {advisors.map((advisor) => (
-                            <div key={advisor.name} className="border border-black/[0.1] px-8 py-6 flex items-center justify-between group cursor-pointer hover:bg-gray-50 transition-colors">
+                            <div key={advisor.name} className="border border-black px-8 py-6 flex items-center justify-between group cursor-pointer hover:bg-gray-50 transition-colors">
                                 <span className="text-xl font-medium text-black">{advisor.name}</span>
                                 <div className="flex items-center gap-1 text-[11px] font-bold tracking-widest text-black/30 group-hover:text-black transition-colors">
                                     MORE
@@ -70,7 +70,7 @@ export default function Trusted() {
                     </div>
 
                     {/* Incubated By Right */}
-                    <div className="lg:col-span-3 border border-black/[0.1] p-8 flex flex-col justify-between">
+                    <div className="lg:col-span-3 border border-black p-8 flex flex-col justify-between">
                         <h3 className="text-[12px] font-bold tracking-widest uppercase text-black mb-8">
                             INCUBATED BY<br />NUMBERGROUP
                         </h3>

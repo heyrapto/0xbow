@@ -60,9 +60,9 @@ export default function Blog() {
                     {posts.map((post) => (
                         <div
                             key={post.id}
-                            className="min-w-[340px] md:min-w-[400px] border border-black/[0.1] bg-white flex flex-col snap-start group"
+                            className="min-w-[340px] md:min-w-[400px] border border-black bg-white flex flex-col snap-start group"
                         >
-                            <div className="relative aspect-[4/3] border-b border-black/[0.1] overflow-hidden">
+                            <div className="relative aspect-[4/3] border-b border-black overflow-hidden">
                                 <Image
                                     src={post.image}
                                     alt={post.title}
@@ -80,7 +80,7 @@ export default function Blog() {
                                 <div className="mt-auto">
                                     <Link
                                         href="#"
-                                        className="inline-flex items-center gap-2 border border-black/10 px-5 py-3 text-[11px] font-bold tracking-widest hover:bg-black hover:text-white transition-all uppercase"
+                                        className="inline-flex items-center gap-2 border border-black px-5 py-3 text-[11px] font-bold tracking-widest hover:bg-black hover:text-white transition-all uppercase"
                                     >
                                         Read More
                                         <HiArrowUpRight className="w-3.5 h-3.5" />
@@ -95,28 +95,19 @@ export default function Blog() {
                 <div className="flex justify-end gap-3 mt-8">
                     <button
                         onClick={() => scroll("left")}
-                        className="w-12 h-12 rounded-full border border-black/[0.1] flex items-center justify-center hover:bg-black hover:text-white transition-all"
+                        className="w-12 h-12 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all"
                     >
                         <HiOutlineArrowLeft className="w-5 h-5" />
                     </button>
                     <button
                         onClick={() => scroll("right")}
-                        className="w-12 h-12 rounded-full border border-black/[0.1] flex items-center justify-center hover:bg-black hover:text-white transition-all"
+                        className="w-12 h-12 rounded-full border border-black flex items-center justify-center hover:bg-black hover:text-white transition-all"
                     >
                         <HiOutlineArrowRight className="w-5 h-5" />
                     </button>
                 </div>
             </div>
 
-            <style jsx global>{`
-        .no-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-        .no-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
         </section>
     );
 }
