@@ -21,7 +21,17 @@ export default function Trusted() {
     ];
 
     return (
-        <section className="py-24 bg-white overflow-hidden">
+        <section className="relative py-24 bg-white overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/images/trusted/bg.png"
+                    alt="Background Pattern"
+                    className="w-full h-full object-cover opacity-50"
+                    fill
+                    priority
+                />
+            </div>
             <div className="max-w-7xl mx-auto px-6">
                 {/* Main Header Box */}
                 <div className="border border-black pt-20 pb-24 px-10 relative mb-4">
